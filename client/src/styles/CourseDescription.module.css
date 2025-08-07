@@ -1,0 +1,82 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:600px;
+    margin: auto;
+}
+.topContainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 2rem;
+}
+.thumbnail{
+    width: 550px;
+    aspect-ratio: 550/300;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+
+.mainContent{
+    margin-bottom: 1rem;
+    
+}
+
+.overView{
+    
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    border:0.5px solid rgb(185, 178, 178);
+    gap: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    
+    
+}
+
+.buyButton{
+    background-color:#5022c3;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: medium;
+    margin-bottom: 1rem;
+    
+
+}
+
+.reviewContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:0rem 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .mainContainer{
+        width: 100%;
+    }
+    .thumbnail {
+        width: 500px;
+    }
+    .overView{
+        flex-direction: column;
+    }
+    .premium{
+        width:100%;
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail {
+        width: 300px;
+    }
+}
+

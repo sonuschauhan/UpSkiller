@@ -1,0 +1,17 @@
+.topContainer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.courseContainer{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}

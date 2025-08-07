@@ -1,0 +1,65 @@
+.courseManagerContainer{
+    display: flex;
+    height: 80vh;
+}
+.leftContainer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rightContainer{
+ width: 30%;
+ border:1px solid rgb(42, 41, 41);
+}
+.videoSidebar{
+    
+}
+.videoTitleTop{
+    color:white;
+    background-color: rgb(35, 35, 35);
+    padding: 1.5rem;
+}
+
+.videoCard{
+    height: 60px;
+    border: 0.5px solid rgb(205, 201, 201);
+    display: flex;
+    padding: 2rem;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    transition: 0.2s ease-in;
+
+    
+}
+
+.videoCard:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.videoIcon{
+    color:#666262ff; 
+    margin-right: 5px;
+}
+.videoIcon:hover{
+    opacity: 1;
+    color: white;
+}
+
+@media (max-width: 768px) {
+  .courseManagerContainer{
+    flex-direction: column;
+  }
+  .leftContainer{
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .rightContainer{
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,58 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  flex: 1 1 250px;
+  margin: 1rem;
+}
+
+.section h3,
+.section h4 {
+  margin-bottom: 0.5rem;
+}
+
+.section p,
+.section ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.copyRight {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
