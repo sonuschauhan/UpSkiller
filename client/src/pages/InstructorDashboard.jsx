@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import MyCourseCard from '../components/MyCourseCard';
 import CourseCard from '../components/CourseCard';
-import styles from "../styles/InstructorDashboard.module.css";
+import styles from "../styles/instructorDashboard.module.css";
 import Button from '@mui/material/Button';
 
 export default function InstructorDashboard() {
