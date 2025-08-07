@@ -9,7 +9,24 @@ import courseRoute from "./routes/course.routes.js";
 import instructorRoute from "./routes/instroctor.routes.js";
 const app = express();
 
-app.use(cors());
+const allowedOrigins = [
+  "https://upskiller-client.onrender.com",
+  "http://localhost:5173"  // keep for local testing
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, // important if you're using cookies
+  })
+);
+
 app.use(express.json({limit:"40kb"}));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
