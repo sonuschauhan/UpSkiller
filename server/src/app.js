@@ -14,18 +14,10 @@ const allowedOrigins = [
   "http://localhost:5173"  // keep for local testing
 ];
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true, // important if you're using cookies
-  })
-);
+app.use(cors({
+  origin: "https://upskiller-client.onrender.com", // ✅ frontend domain
+   // ✅ required if you're using cookies or sessions
+}));
 
 app.use(express.json({limit:"40kb"}));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
