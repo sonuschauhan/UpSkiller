@@ -109,7 +109,7 @@ export default function CourseDescription() {
             <p style={{ fontSize: "1.1rem", margin: "4px 0px" }}>
               {course.description}
             </p>
-            <button style={{ backgroundColor: "#968dbc", borderRadius: "5px" }}>
+            <button style={{ backgroundColor: "#968dbc", borderRadius: "5px",padding:"5px",color:"white",border:"none" }}>
               {course.category}
             </button>
 

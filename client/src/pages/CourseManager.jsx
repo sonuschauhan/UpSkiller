@@ -7,6 +7,7 @@ import ButtonSpinner from "../components/ButtonSpinner";
 import styles from "../styles/CourseManger.module.css";
 import TextField from "@mui/material/TextField";
 import OndemandVideoTwoToneIcon from '@mui/icons-material/OndemandVideoTwoTone';
+import { Button } from "@mui/material";
 export default function CourseManager() {
   const [title, setTitle] = useState("");
   const [video, setVideo] = useState(null);
@@ -62,7 +63,7 @@ export default function CourseManager() {
   return (
     <div className={styles.courseManagerContainer}>
       <div className={styles.leftContainer}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{}}>
           <div>
             <TextField
               type="text"
@@ -73,6 +74,7 @@ export default function CourseManager() {
               size="small"
               
             />
+            
             <input
               type="file"
               accept="video/*"
@@ -83,7 +85,7 @@ export default function CourseManager() {
             />
           </div>
           <div style={{margin:"5px"}}>
-            <button>{uploadLoading ? <ButtonSpinner /> : "Upload"} </button>
+            <Button variant="outlined" size="small">{uploadLoading ? <ButtonSpinner /> : "Upload"} </Button>
           </div>
         </form>
       </div>

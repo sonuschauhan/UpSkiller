@@ -1,6 +1,7 @@
 .courseManagerContainer{
     display: flex;
     height: 80vh;
+    
 }
 .leftContainer{
     width: 70%;

@@ -9,8 +9,9 @@
 .courseContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+    justify-content:flex-start;
+    
+    /* padding: 1.5rem; */
     gap: 2rem;
     flex-wrap: wrap;
     

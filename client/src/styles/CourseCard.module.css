@@ -15,7 +15,7 @@
 }
 
 .cardBody{
-    padding: 5px;
+    padding: 10px;
 }
 
 .title {
@@ -39,10 +39,24 @@
    */
    background-color: rgb(43, 42, 42);
   margin-top: 3px;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .stats{
   display: flex;
   gap: 7px;
   margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  .card{
+    width: 100%;
+  }
 }

@@ -42,7 +42,7 @@
 }
 
 .cardBody{
-    padding: 5px;
+    padding: 10px;
 }
 
 .title {
@@ -55,4 +55,18 @@
   font-size: 0.9rem;
   color: #666;
   /* margin-bottom: 0.75rem; */
+}
+
+@media (max-width: 768px) {
+  
+  
+  
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 300px;
+  }
+  
+  
 }

@@ -34,14 +34,16 @@ export default function MyCourses() {
     }
   if(loading) return <Spinner/>  
   return (
-    <div>
+    <div >
       <div className={styles.topContainer}>
         <h1 >My learning</h1>
       </div>
+      <div style={{width:"90%",margin:"auto"}}>
       <div className={styles.courseContainer}>
         {courses.map((course,i)=>{
         return <MyCourseCard course={course} instructor={instructor} key={i}/>
       })}
+      </div>
       </div>
       
       
