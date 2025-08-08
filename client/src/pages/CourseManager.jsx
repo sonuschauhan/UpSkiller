@@ -85,7 +85,7 @@ export default function CourseManager() {
             />
           </div>
           <div style={{margin:"5px"}}>
-            <Button variant="outlined" size="small">{uploadLoading ? <ButtonSpinner /> : "Upload"} </Button>
+            <button >{uploadLoading ? <ButtonSpinner /> : "Upload"} </button>
           </div>
         </form>
       </div>
