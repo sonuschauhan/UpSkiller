@@ -11,12 +11,20 @@ const app = express();
 
 const allowedOrigins = [
   "https://upskiller-client.onrender.com",
-  "http://localhost:5173"  // keep for local testing
+  "http://localhost:5173"
 ];
 
 app.use(cors({
-  origin: "https://upskiller-client.onrender.com", // ✅ frontend domain
-   // ✅ required if you're using cookies or sessions
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true // ✅ required for cookies/session
 }));
 
 app.use(express.json({limit:"40kb"}));
